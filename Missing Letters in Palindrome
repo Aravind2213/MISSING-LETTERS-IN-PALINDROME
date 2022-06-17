@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    // Write C code here
+    int flag=0;
+    char a[1000],ch;
+    printf("Enter\n");
+    scanf("%s",a);
+    int l=strlen(a);
+    for(int i=0;i<l;i++)
+    {
+        if(a[i]==a[l-i-1])
+            flag=1;
+        else
+            {
+                flag=0;
+                ch=a[i];
+                break;
+            }
+    }
+    printf("The missing letter is\n");
+    if(flag==0)
+        printf("%c",ch);
+    
+}  
