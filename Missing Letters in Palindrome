@@ -3,7 +3,7 @@
 
 int main() {
     // Write C code here
-    int flag=0;
+    int flag;
     char a[1000],ch;
     printf("Enter the String:\n");
     scanf("%s",a);
